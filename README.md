@@ -37,16 +37,16 @@ TIDAL_CLIENT_ID=your_tidal_client_id_here
 <b>[Spotify](https://developer.spotify.com/documentation/web-api)</b>
   1. Login with the profile you want to transfer the data from
   2. In the top rigth corner click onto you profile and enter the dashboard and create a new app
-  3. As the Website you have to enter this URL ```http://127.0.0.1:8000/callback```, then you are done
+  3. On the Website you have to enter this URL ```http://127.0.0.1:8000/callback```, then you are done
   4. Go into your newly created App and get the CLIENT_ID and CLIENT_SECRET and paste them into the ```.env``` file at the corresponding location.
 
-<b>[Tiday](https://developer.tidal.com/)</b>
+<b>[Tidal](https://developer.tidal.com/)</b>
   1. Login with the profile you want to tranfer the data to
   2. Go to the Dashboard in the top right corner
   3. Create a new app
   4. Copy the ``CLIENT_ID`` into the corresponding location in the ```.env``` file (no ```CLIENT_SECRET```needed)
   5. Go to the settings and add this URL ```http://localhost:8080/callback``` to the redirect URLs
-  6. Add the following Scopes in the Settings ```search.write playlists.write```
+  6. Add the following Scopes in the settings ```search.write playlists.write```
 
 ## 🚀 Usage
 From here on the process is pretty much straight forward. You have to execute the 2 Python files [get-spotify-data.py](./get-spotify-data.py) and [spotify-to-tidle.py](./spotify-to-tidle.py).
